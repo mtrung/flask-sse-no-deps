@@ -2,9 +2,7 @@ import queue
 
 import flask
 
-
 app = flask.Flask(__name__)
-
 
 @app.route('/')
 def hello_world():
@@ -63,3 +61,10 @@ def listen():
             yield msg
 
     return flask.Response(stream(), mimetype='text/event-stream')
+
+@app.route('/reader')
+def reader():
+    return flask.render_template('reader.html')
+
+if __name__ == '__main__':
+    app.run(threaded=True)

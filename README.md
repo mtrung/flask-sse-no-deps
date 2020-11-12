@@ -37,3 +37,15 @@ python emit.py
 ```
 
 This will run an infinite loop which sends a GET request to the `/ping` route every second. This in turn will trigger an event which will be displayed in the listening terminal. You should see a new `pong` message being displayed every second or so.
+
+### Modifications by me
+
+(If on windows) - Use:
+
+```PowerShell
+ ./env/Scripts/Activate.ps1
+```
+
+Then run listen.py / emit.py as usual
+
+Also, open localhost:5000/reader and view the console to view a practical example of how to subscribe to SSE that way
