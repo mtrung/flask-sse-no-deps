@@ -33,7 +33,7 @@ python app.py
 - Type into your browser localhost:8080, you should see new stock prices being updated every 2s.
 - You can open multiple browsers, they'll show the same data being updated every 2s.
 
-### My improvments
+### My improvements
 
 - More practical example using javascript SSE client instead of python SSE client. [See md_sse.html](templates/md_sse.html)
 - Add json encode/decode on payload to support `\n` in payload
